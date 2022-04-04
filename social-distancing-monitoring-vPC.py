@@ -135,7 +135,7 @@ while True:
                         j_xRightTop = x_j_centroid * 2 - j_xLeftBottom
                         j_yRightTop = y_j_centroid * 2 - j_yLeftBottom
                         cv2.rectangle(frame, (j_xLeftBottom, j_yLeftBottom), (j_xRightTop, j_yRightTop), (0, 0, 255), 2)
-                        if i_frame-frame2>7:
+                        if i_frame-frame2>10:
                             playsound('pippip.wav',False)
                             frame2=i_frame
                             warning = 1
